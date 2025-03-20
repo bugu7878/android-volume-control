@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- 1. 当前媒体音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击获取当前媒体音量"
+                    android:id="@+id/CurrentMediaVolumeButton"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/CurrentMediaVolumeText"/>
+        </LinearLayout>
+
+        <!-- 2. 当前系统音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击获取当前系统音量"
+                    android:id="@+id/CurrentSystemVolumeButton"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/CurrentSystemVolumeText"/>
+        </LinearLayout>
+
+        <!-- 3. 当前铃声音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击获取当前铃声音量"
+                    android:id="@+id/CurrentRingVolumeButton"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/CurrentRingVolumeText"/>
+        </LinearLayout>
+
+        <!-- 4. 当前通知音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击获取当前通知音量"
+                    android:id="@+id/CurrentNotificationVolumeButton"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/CurrentNotificationVolumeText"/>
+        </LinearLayout>
+
+        <!-- 5. 当前闹钟音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击获取当前闹钟音量"
+                    android:id="@+id/CurrentAlarmVolumeButton"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/CurrentAlarmVolumeText"/>
+        </LinearLayout>
+
+        <!-- 6. 当前通话音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击获取当前通话音量"
+                    android:id="@+id/CurrentCallVolumeButton"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/CurrentCallVolumeText"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- 1. 设置媒体音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:text="5"
+                      android:inputType="number"
+                      android:textAlignment="center"
+                      android:id="@+id/SetMediaVolumeText"/>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击设置媒体音量"
+                    android:id="@+id/SetMediaVolumeButton"/>
+        </LinearLayout>
+
+        <!-- 2. 设置系统音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:text="5"
+                      android:inputType="number"
+                      android:textAlignment="center"
+                      android:id="@+id/SetSystemVolumeText"/>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击设置系统音量"
+                    android:id="@+id/SetSystemVolumeButton"/>
+        </LinearLayout>
+
+        <!-- 3. 设置铃声音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:text="5"
+                      android:inputType="number"
+                      android:textAlignment="center"
+                      android:id="@+id/SetRingVolumeText"/>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击设置铃声音量"
+                    android:id="@+id/SetRingVolumeButton"/>
+        </LinearLayout>
+
+        <!-- 4. 设置通知音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:text="5"
+                      android:inputType="number"
+                      android:textAlignment="center"
+                      android:id="@+id/SetNotificationVolumeText"/>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击设置通知音量"
+                    android:id="@+id/SetNotificationVolumeButton"/>
+        </LinearLayout>
+
+        <!-- 5. 设置闹钟音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:text="5"
+                      android:inputType="number"
+                      android:textAlignment="center"
+                      android:id="@+id/SetAlarmVolumeText"/>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击设置闹钟音量"
+                    android:id="@+id/SetAlarmVolumeButton"/>
+        </LinearLayout>
+
+        <!-- 6. 设置通话音量 -->
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:layout_width="100dp"
+                      android:layout_height="wrap_content"
+                      android:text="5"
+                      android:inputType="number"
+                      android:textAlignment="center"
+                      android:id="@+id/SetCallVolumeText"/>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击设置通话音量"
+                    android:id="@+id/SetCallVolumeButton"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
